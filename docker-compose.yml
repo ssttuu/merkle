@@ -1,0 +1,8 @@
+version: '2'
+services:
+  merkle_root:
+    image: golang:1.6
+    build: ./merkleRoot
+    working_dir: /go/src/app
+    volumes:
+      - ./merkleRoot:/go/src/app
